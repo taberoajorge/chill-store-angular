@@ -17,6 +17,17 @@ export class AppComponent {
   buttonStatus : boolean = true;
   newName: any = '';
 
+  userData = {
+    name: '',
+    email: '',
+    password: '',
+  }
+
+  onRegistrer(){
+    console.log(this.userData);
+
+  }
+
   products = [
     {
       name: 'bici',
