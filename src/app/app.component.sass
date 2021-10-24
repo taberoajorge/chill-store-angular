@@ -1,6 +1,44 @@
-.test
-  height: 200px
-  width: 200px
-  overflow: auto
-  background-color: #f0f0f0
+.nav--bar
+  position: -webkit-sticky
+  position: sticky
+  top: 0
+  z-index: 1
+  width: 100%
+  background-color: hsla(0, 0%, 100%, .8)
 
+.nav--grid
+  display: grid
+  margin: 0
+  padding: 0
+  justify-content: flex-start
+  grid-auto-flow: row
+  grid-column-gap: 0px
+  grid-rows-gap: 0px
+  grid-template-columns: 0.5fr 1fr
+
+.start
+  grid-column: -3
+
+.end
+  grid-column: 1
+
+.products--grid
+  margin: 10px
+  display: flex
+  flex-direction: column
+  div
+    border-radius: 15px
+    border: solid 1px #D5D7DB
+    padding: 10px
+    margin: 10px
+    img
+      width: 64px
+      border-radius: 10px
+    h2, p
+      margin: 0
+
+@media screen and (min-width: 40em)
+  .products--grid
+    display: grid
+    grid-template-columns: repeat(5,1fr)
+    grid-gap: 15px

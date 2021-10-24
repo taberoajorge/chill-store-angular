@@ -1,73 +1,36 @@
-<h1>Hello World</h1>
+<div class="nav--bar">
+  <nav>
+    <ul>
+      
+      <li class="start">
+        <a href="">Chill Store</a>
+      </li>
 
-<h2>Ejecucion de operaciones: {{'Test '.repeat(7)}}</h2>
-
-<p>3+2={{3+2}}</p>
-
-
-<h1>Cambio de propiedades y ejecucion de metodos</h1>
-
-<button [disabled]="buttonStatus" >Enviar</button>
-<button (click)="toggleButton()" >Disable button</button>
-<button (click)="ageIncrease()" >Increase</button>
-
-
-
-<input type="text" name="inputNormal" [value]="person.name" id="">
-<progress max="100" [value]="person.age" ></progress>
-<img [src]="person.avantar" alt="" srcset="">
-
-<hr>
-
-<h1>{{person.name}}</h1>
-<h1>{{person.age}}</h1>
-
-<input type="number" name="keyUp" min="18"
- [(ngModel)]="person.age" required #nameInput="ngModel" id="" />
-
-
-<input type="text" name="keyUp"
- [(ngModel)]="person.name" required #nameInput="ngModel" id="" />
-
-<hr>
-<p>valid: {{nameInput.valid}} </p>
-<hr>
-
-
-<h1>NgIf</h1>
-
-<p *ngIf="person.age == 19"> Epale</p>
-
-<hr>
-
-<h1>Ngfor</h1>
-
-<input type="text" [(ngModel)]="newName" #elementInput="ngModel" >
-
-<button (click)="addElement()" > </button>
-
-<ul>
-  <li *ngFor="let i of emojis; index as a" > {{i}}
-    <button (click)="removeEmoji(a)" > delete</button>
-  </li>
-</ul>
-
-<hr>
-<div class="test" (scroll)='onScroll($event)' >
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
-    aliquam, asperiores, atque, autem blanditiis consequatur cumque debitis
-    doloremque dolores dolorum eaque eius enim error esse est et eveniet
-    exercitationem facere facilis fugiat fugit harum hic id illo impedit
-    inventore ipsa ipsum iste itaque iure laboriosam laborum laudantium
-    magnam magni maxime minima minus modi molestias nam natus necessitatibus
-    neque nihil nobis nostrum numquam odio officia omnis optio pariatur
-    perferendis perspiciatis placeat porro possimus praesentium quae quam
-    quas quia quibusdam quidem quis quod ratione recusandae repellendus
-    rerum sapiente sed sequi similique sint soluta sunt suscipit temporibus
-    tenetur totam ullam unde unde ut veritatis voluptas voluptatem voluptates
-    voluptatum.
-  </p>
+      <li class="end">
+        <a href="">H Menu</a>
+      </li>
+    </ul>
+  </nav>
 </div>
 
+<h1>Products</h1>
+
+<div class="products--grid">
+    <div *ngFor="let element of products">
+      <img class="imageFor" [src]="element.image">
+      <p>{{element.price}}</p>
+      <p>{{element.name}}</p>
+    </div>
+</div>
+
+
 <hr>
+
+<footer>
+  <ul class="nav--grid">
+    <li><a href="">Test</a></li>
+    <li><a href="">Test</a></li>
+    <li><a href="">Test</a></li>
+    <li><a href="">Test</a></li>
+  </ul>
+</footer>

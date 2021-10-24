@@ -17,6 +17,36 @@ export class AppComponent {
   buttonStatus : boolean = true;
   newName: any = '';
 
+  products = [
+    {
+      name: 'bici',
+      price: 565,
+      image: './assets/images/bici.jpg',
+      category: 'all',
+    },
+    {
+      name: 'casita',
+      price: 356,
+      image: './assets/images/casa.jpg'
+    },
+    {
+      name: 'cuadros',
+      price: 34,
+      image: './assets/images/cuadros.webp'
+    },
+    {
+      name: 'muñeca',
+      price: 23,
+      image: './assets/images/doll.jpg'
+    },
+    {
+      name: 'tren',
+      price: 34,
+      image: './assets/images/tren.jpg'
+    },
+  ]
+
+
   person = {
     name: 'Jorge',
     age: 21,
