@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { ImgComponent } from './components/img/img.component';
+// import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
+    ImgComponent,
+    // NavbarComponent,
   ],
   imports: [
     BrowserModule,

@@ -17,6 +17,8 @@ export class AppComponent {
   buttonStatus : boolean = true;
   newName: any = '';
 
+  imgParent = ""
+
   userData = {
     name: '',
     email: '',
