@@ -17,15 +17,15 @@ import {
 })
 export class ImgComponent
 implements OnInit, OnChanges, AfterViewInit, OnDestroy {
-  counter: number = 0;
-  endCounter: number | undefined;
+  // counter: number = 0;
+  // endCounter: number | undefined;
 
   img: string = '';
 
   @Input('img')
   set changeImg(newImg: string) {
     this.img = newImg;
-    console.log('Solo la imagen cambio =>', this.img);
+    // console.log('Solo la imagen cambio =>', this.img);
   }
 
   @Output() loaded = new EventEmitter < string > ();
@@ -33,35 +33,35 @@ implements OnInit, OnChanges, AfterViewInit, OnDestroy {
   imageDefault: string = 'https://www.m2crowd.com/core/i/placeholder.png';
 
   constructor() {
-    console.log('constructor', 'imgValue =>', this.img);
+    // console.log('constructor', 'imgValue =>', this.img);
   }
 
   ngOnChanges(changes: SimpleChanges) {
     // Cambios en los inputs
-    console.log('ngOnchanges', 'imgValue =>', this.img);
-    console.log('Estos son los cambios', changes);
+    // console.log('ngOnchanges', 'imgValue =>', this.img);
+    // console.log('Estos son los cambios', changes);
   }
 
   ngOnInit(): void {
     // Aqui se corren cosas asincronas, fetch, llamadas API, promesas
 
-    console.log('ngOnInit', 'imgValue =>', this.img);
+    // console.log('ngOnInit', 'imgValue =>', this.img);
 
-    this.endCounter = window.setInterval(() => {
-      this.counter += 1;
-      console.log('Run counter');
-    }, 1000);
+    // this.endCounter = window.setInterval(() => {
+    //   this.counter += 1;
+    //   console.log('Run counter');
+    // }, 1000);
   }
 
   ngAfterViewInit() {
     // Este se ejecuta despues del renderizado
 
-    console.log('ngAfterViewInit');
+    // console.log('ngAfterViewInit');
   }
 
   ngOnDestroy() {
     console.log('ngOnDestroy');
-    window.clearInterval(this.endCounter);
+    // window.clearInterval(this.endCounter);
   }
 
   imgError() {
