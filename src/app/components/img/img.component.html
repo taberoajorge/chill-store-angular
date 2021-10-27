@@ -1,4 +1,6 @@
-<img [src]="img" width="200" *ngIf="img ; else noImage" >
-<ng-template #noImage >
-  <img width="200" src="../../../assets/images/bici.jpg" alt="" srcset="">
+<img [src]="img" (load)="imgLoad()" (error)="imgError()" width="200" *ngIf="img; else noImage" />
+<ng-template #noImage>
+  <img width="200" [src]="imageDefault" alt="" srcset="" />
 </ng-template>
+
+<p >{{ counter }}</p>

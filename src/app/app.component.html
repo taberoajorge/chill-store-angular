@@ -1,53 +1,67 @@
-<div class="nav--bar">
-  <nav>
-    <ul>
-      <li class="start"><a href="">Chill Store</a></li>
-      <li class="end"><a href="">Menu</a></li>
-    </ul>
-  </nav>
-</div>
 
-<input type="text" [(ngModel)]="imgParent" >
+<app-products></app-products>
 
-<app-img [img]="imgParent" ></app-img>
 
-{{ [1,2].reverse()}}
 
-<section>
+
+
+<!-- <button (click)="toogleImage()">Toogle Image</button>
+{{showedImage}}
+
+<input type="text" [(ngModel)]="imgParent" />
+
+<app-img *ngIf="showedImage" (loaded)="onLoaded($event)" [img]="imgParent"></app-img> -->
+
+
+
+<!-- <section>
   <label for="">Registrate</label>
   <form (ngSubmit)="onRegistrer()" #myForm="ngForm">
     <div class="input-group">
       <label for="name">Name</label>
-      <input type="text" required [(ngModel)]="userData.name" id="name" name="name" >
+      <input
+        type="text"
+        required
+        [(ngModel)]="userData.name"
+        id="name"
+        name="name"
+      />
       <p>Mensaje de error</p>
     </div>
     <div class="input-group">
       <label for="email">Email</label>
-      <input type="email"required [(ngModel)]="userData.email" id="email" name="email" >
+      <input
+        type="email"
+        required
+        [(ngModel)]="userData.email"
+        id="email"
+        name="email"
+      />
       <p>Mensaje de error</p>
-
     </div>
     <div class="input-group">
       <label for="password">Password</label>
-      <input type="password" required [(ngModel)]="userData.password" id="password"name="password" >
+      <input
+        type="password"
+        required
+        [(ngModel)]="userData.password"
+        id="password"
+        name="password"
+      />
       <p>Mensaje de error</p>
-
     </div>
-    <button [disabled]="myForm.invalid" type="submit" >Registrar</button>
-    <button type="button" >Accion</button>
+    <button [disabled]="myForm.invalid" type="submit">Registrar</button>
+    <button type="button">Accion</button>
   </form>
-</section>
-
-
-<h3>Products</h3>
+</section> -->
+<!-- <h3>Products</h3>
 <div class="products--grid">
-    <div *ngFor="let element of products">
-      <img class="imageFor" [src]="element.image">
-      <p>{{element.price}}</p>
-      <p>{{element.name}}</p>
-    </div>
+  <div *ngFor="let element of products">
+    <img class="imageFor" [src]="element.image" />
+    <p>{{ element.price }}</p>
+    <p>{{ element.name }}</p>
+  </div>
 </div>
-
 
 <footer>
   <ul class="nav--grid">
@@ -56,4 +70,4 @@
     <li><a href="">Test</a></li>
     <li><a href="">Test</a></li>
   </ul>
-</footer>
+</footer> -->
