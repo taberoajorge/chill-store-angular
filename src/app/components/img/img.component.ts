@@ -22,6 +22,7 @@ implements OnInit, OnChanges, AfterViewInit, OnDestroy {
 
   img: string = '';
 
+  // eslint-disable-next-line @angular-eslint/no-input-rename
   @Input('img')
   set changeImg(newImg: string) {
     this.img = newImg;
@@ -36,28 +37,28 @@ implements OnInit, OnChanges, AfterViewInit, OnDestroy {
     // console.log('constructor', 'imgValue =>', this.img);
   }
 
-  ngOnChanges(changes: SimpleChanges) {
-    // Cambios en los inputs
-    // console.log('ngOnchanges', 'imgValue =>', this.img);
-    // console.log('Estos son los cambios', changes);
-  }
+  // ngOnChanges(changes: SimpleChanges) {
+  //   // Cambios en los inputs
+  //   // console.log('ngOnchanges', 'imgValue =>', this.img);
+  //   // console.log('Estos son los cambios', changes);
+  // }
 
-  ngOnInit(): void {
-    // Aqui se corren cosas asincronas, fetch, llamadas API, promesas
+  // ngOnInit(): void {
+  //   // Aqui se corren cosas asincronas, fetch, llamadas API, promesas
 
-    // console.log('ngOnInit', 'imgValue =>', this.img);
+  //   // console.log('ngOnInit', 'imgValue =>', this.img);
 
-    // this.endCounter = window.setInterval(() => {
-    //   this.counter += 1;
-    //   console.log('Run counter');
-    // }, 1000);
-  }
+  //   // this.endCounter = window.setInterval(() => {
+  //   //   this.counter += 1;
+  //   //   console.log('Run counter');
+  //   // }, 1000);
+  // }
 
-  ngAfterViewInit() {
-    // Este se ejecuta despues del renderizado
+  // ngAfterViewInit() {
+  //   // Este se ejecuta despues del renderizado
 
-    // console.log('ngAfterViewInit');
-  }
+  //   // console.log('ngAfterViewInit');
+  // }
 
   ngOnDestroy() {
     console.log('ngOnDestroy');

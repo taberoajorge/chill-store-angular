@@ -22,7 +22,7 @@ export class ProductComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  // ngOnInit(): void {}
 
   onAddTocart(){
     this.addedProdcut.emit(this.product)
