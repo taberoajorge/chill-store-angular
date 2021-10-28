@@ -7,7 +7,7 @@ import { Product } from '../../models/product.model';
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.sass'],
 })
-export class ProductComponent implements OnInit {
+export class ProductComponent  {
   @Input() product: Product = {
     id: '',
     price: 0,

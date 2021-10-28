@@ -16,7 +16,7 @@ import {
   styleUrls: ['./img.component.sass'],
 })
 export class ImgComponent
-implements OnInit, OnChanges, AfterViewInit, OnDestroy {
+  {
   // counter: number = 0;
   // endCounter: number | undefined;
 
