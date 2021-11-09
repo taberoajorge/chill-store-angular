@@ -31,7 +31,7 @@ export class ImgComponent
 
   @Output() loaded = new EventEmitter < string > ();
 
-  imageDefault: string = 'https://www.m2crowd.com/core/i/placeholder.png';
+  imageDefault: string = 'https://via.placeholder.com/150';
 
   constructor() {
     // console.log('constructor', 'imgValue =>', this.img);
